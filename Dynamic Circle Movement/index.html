@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CR Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hide-div"></div>
+      <div class="container-left">
+        <div class="circles"></div>
+        <div id="dynamic-container">
+          <div id="item1" class="item" style="--d: 0s">
+            <img src="web.jpg" width="18px" />
+            Social Media Optimization
+          </div>
+          <div id="item2" class="item" style="--d: -2s">
+            <img src="web.jpg" width="18px" />
+            Search Paid Marketing
+          </div>
+          <div id="item3" class="item" style="--d: -4s">
+            <img src="web.jpg" width="18px" />
+            Online Reputation Management
+          </div>
+          <div id="item4" class="item" style="--d: -6s">
+            <img src="web.jpg" width="18px" />
+            Managed Web Hosting
+          </div>
+          <div id="item5" class="item" style="--d: -8s">
+            <img src="web.jpg" width="18px" />
+            Conversion Rate Optimization
+          </div>
+          <div id="item6" class="item" style="--d: -10s">
+            <img src="web.jpg" width="18px" />
+            Managed Web Hosting
+          </div>
+        </div>
+      </div>
+      <div class="container-right">
+        <h1>ASSURED SUCCESS, AMPLIFIED RESULTS</h1>
+        <div class="container-right-top">
+          <div class="marketing-plan">
+            <h3>Marketing Plans for everyone</h3>
+            <p>Explore our packages and choose the one that suits you</p>
+          </div>
+          <div class="pricing-Btm">
+            <img src="./stock-photo.jpg" />
+            <button>Pricing</button>
+          </div>
+        </div>
+
+        <div class="container-right-bottm">
+          <h2>Conversion Rate Optimization</h2>
+          <div class="lines">
+            <div class="blue-line"></div>
+            <div class="navyblue-line"></div>
+            <div class="red-line"></div>
+          </div>
+          <p>
+            Increase your website's conversion rate and boost your sales with
+            our CRO services. We will analyze your website traffic and data to
+            identify areas where you can improve your conversion rate.
+          </p>
+          <p>
+            We will then implement and test different CRO strategies to improve
+            your website's performance.
+          </p>
+          <div class="explore">
+            <div class="arrow-mark">
+              <div class="line"></div>
+              <div class="arrow right"></div>
+              <div class="circle"></div>
+            </div>
+            <p>Explore More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var activeIndex = 5;
+      var fun = setInterval(async function () {
+        for (let i = 1; i <= 6; i++) {
+          document.getElementById("item" + i).classList.add("pause");
+        }
+        document.getElementById("item" + activeIndex).classList.add("active");
+        await new Promise((r) => setTimeout(() => r(), 2000));
+        document
+          .getElementById("item" + activeIndex)
+          .classList.remove("active");
+        activeIndex = activeIndex - 1 !== 0 ? activeIndex - 1 : 6;
+        for (let i = 1; i <= 6; i++) {
+          document.getElementById("item" + i).classList.remove("pause");
+        }
+      }, 4000);
+    </script>
+  </body>
+</html>
