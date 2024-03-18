@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: black;
   display: flex;
@@ -21,6 +22,7 @@ body {
   width: 45%;
   overflow: hidden;
 }
+
 .hide-div {
   background-color: black;
   height: 100%;
@@ -30,12 +32,12 @@ body {
 
 #dynamic-container {
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 0px #fbdade, 0px 0px 0px 64px #ffe9ec,
-    0px 0px 0px 140px #fff5f7;
+  box-shadow: 0px 0px 0px 0px #fbdade, 0px 0px 0px 72px #ffe9ec,
+    0px 0px 0px 156px #fff5f7;
   background-color: #fbdade;
-  width: 200px;
-  height: 200px;
-  margin-top: 50%;
+  width: 188px;
+  height: 188px;
+  margin-top: 52%;
   margin-left: -16%;
   display: grid;
   grid-template-columns: 88px;
@@ -55,32 +57,35 @@ body {
   border-radius: 50%;
   border: 2px dashed grey;
   animation: spin 12s var(--d, 0s) linear infinite;
-  transform: rotate(-1deg) translate(180px) rotate(-1deg);
+  transform: rotate(0deg) translate(208px) rotate(0deg);
+  background-color: white;
 }
+
 @keyframes spin {
   100% {
-    transform: rotate(-360deg) translate(180px) rotate(1turn);
+    transform: rotate(-360deg) translate(208px) rotate(1turn);
   }
 }
 
 .pause {
-  -webkit-animation-play-state: paused !important;
+  /* -webkit-animation-play-state: paused !important;
   -moz-animation-play-state: paused !important;
-  -o-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important; */
   animation-play-state: paused !important;
 }
 
 .active {
   border: 2px dashed rgb(255, 211, 14) !important;
-  width: 106px;
-  height: 106px;
+  width: 108px;
+  height: 108px;
+  font-weight: 600;
 }
 
 /* Container Right */
 
 .container-right {
   width: 55%;
-  margin: 5rem 1rem;
+  margin: 5rem 1.2rem;
 }
 
 .container-right h1 {
@@ -89,24 +94,26 @@ body {
 }
 
 .container-right-top {
-  background-color: #dbeedbd0;
+  background-color: #dbeedb8e;
   color: rgb(68, 165, 68);
   display: flex;
   border-radius: 22px;
   height: 110px;
-  width: 480px;
+  width: 98%;
 }
 
 .marketing-plan {
   flex: 3;
-  padding: 22px;
+  padding: 16px;
 }
+
 .marketing-plan p {
-  margin-top: 6px;
+  margin-top: 10px;
   letter-spacing: 1px;
   font-size: 14px;
   font-family: sans-serif;
 }
+
 .pricing-Btm {
   flex: 1;
   display: flex;
@@ -121,6 +128,7 @@ body {
   height: 26px;
   opacity: 0.4;
 }
+
 .pricing-Btm button {
   border: 2px solid rgb(68, 165, 68);
   background-color: rgb(219, 238, 219);
@@ -130,11 +138,12 @@ body {
 }
 
 .container-right-bottm {
-  margin-top: 52px;
-  width: 480px;
+  margin-top: 56px;
+  width: 98%;
 }
+
 .container-right-bottm h2 {
-  font-weight: lighter;
+  font-weight: 550;
 }
 
 .lines {
@@ -145,75 +154,79 @@ body {
 }
 
 .blue-line {
-  height: 6px;
-  width: 42px;
+  height: 5px;
+  width: 40px;
   background-color: #2659e6;
-  border-radius: 6px 0 6px 0;
+  transform: skew(-42deg);
 }
+
 .navyblue-line {
-  height: 6px;
-  width: 42px;
+  height: 5px;
+  width: 40px;
   background-color: #003363;
-  border-radius: 6px 0 6px 0;
+  transform: skew(-42deg);
 }
+
 .red-line {
-  height: 6px;
-  width: 42px;
+  height: 5px;
+  width: 40px;
   background-color: #d33737;
-  border-radius: 6px 0 6px 0;
+  transform: skew(-42deg);
 }
+
 .container-right-bottm p {
   letter-spacing: 1px;
   word-spacing: 1.2px;
   font-size: 14px;
+  text-align: justify;
   color: rgb(51, 51, 51);
   font-family: sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .explore {
   float: right;
   display: flex;
+  margin-bottom: -32px;
+  margin-top: 32px;
 }
 
-.arrow-mark {
-  display: flex;
-}
 .circle {
+  background-color: #8a26fcde;
   height: 32px;
   width: 32px;
   border-radius: 50%;
-  background-color: rebeccapurple;
   position: relative;
-  z-index: 1;
 }
 .arrow {
   position: absolute;
-  margin-left: 42px;
-  margin-top: 11px;
-  border: solid #bfb5c9;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  z-index: 3;
-}
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  height: 7px;
+  width: 7px;
+  border-top: 2px solid #dea8fd;
+  border-right: 2px solid #dea8fd;
+  transform: rotate(45deg);
+  left: 8px;
+  top: 12px;
 }
 .line {
-  margin-right: -12px;
-  margin-top: 14px;
-  height: 3px;
-  width: 42px;
-  background-color: #c8afe0;
-  z-index: 3;
+  position: absolute;
+  background-color: #d895ff;
+  height: 2px;
+  width: 40px;
+  top: 14.5px;
+  right: 16px;
 }
 
 .explore p {
-  color: rgb(110, 63, 156);
+  color: #8a26fc;
   margin-left: 12px;
   margin-top: 8px;
   font-weight: 600;
   font-size: 13px;
+}
+
+@media screen and (max-width: 900) {
+  .container-left {
+    display: none;
+  }
 }
