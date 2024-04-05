@@ -1,0 +1,44 @@
+.navbar {
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 6px;
+  background-color: rgb(218, 218, 218);
+}
+
+.content {
+  padding: 10px;
+}
+
+.bg-bricks {
+  background-color: #f68871;
+}
+
+.staus-badge {
+  padding: 8px 20px !important;
+  margin-top: 12px;
+}
+
+.card-body-spacing {
+  background-color: rgb(235, 235, 235);
+  margin: 8px;
+}
+
+.btn-primary {
+    background-color: rgb(11 118 152) !important;
+}
+
+.react-datepicker__input-container > input {
+  width: 115%;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 3px 4px;
+}
+
+.react-datepicker-wrapper .react-datepicker__close-icon {
+  right: -30px;
+}
