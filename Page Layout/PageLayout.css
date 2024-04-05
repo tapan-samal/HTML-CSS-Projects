@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title{
+    background-color: yellow;
+    height: 70px;
+    text-align: center;
+    padding: 5px;
+}
+
+@font-face {
+    font-family: myfont;
+    /* src: url(../jira_mgmt_tool/fonts/Charlie_Text-Regular\ \(1\).woff2); */
+    src: url(../jira_mgmt_tool/fonts/Poppins/Poppins-BlackItalic.ttf);
+}
+.title h3 {
+    font-family: myfont;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+.header{
+    background-color: #1abc9c;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.header h1{
+        font-family: 'Merienda', cursive;
+}
+
+.navbar{
+    display: flex;
+    background-color: #333;
+    padding-left: 15px;
+    /* justify-content: flex-end; */
+    /* flex-direction: row-reverse; */
+}
+
+.navbar img{ /* How to take right side*/
+    /* float: left; */
+    width: 50px;
+    height: 42px;
+    padding-top: 5px;
+    /* padding-left: 5px; */
+}
+
+.navbar a{
+    /* float: right; */
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* margin: 5px; */
+}
+
+.side-content{
+    flex: 30%;
+    padding: 20px;
+    background-color: #f1f1f1;
+
+}
+
+.main-content{
+    flex: 70%;
+    padding: 20px;
+    background-color: #d9f1ed;
+
+}
+.main-content h2{
+    
+}
+
+.fake-img{
+    /* justify-content: space-evenly; I can't give space between images*/
+    height: 210px;
+    background-color: #aaa;
+    width: 100%;
+    text-align: center;
+    padding: 70px;
+    font-size: 30px;
+    line-break: 5px;
+}
+
+.fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    text-align: center;
+    height: 250px;
+    padding: 80px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer{
+    background-color: #b1b0b0;
+    /* height: 30px; */
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
