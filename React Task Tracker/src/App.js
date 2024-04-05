@@ -1,11 +1,12 @@
-import Header from "./components/Header";
-import TaskBoard from "./components/TaskBoard";
+import TaskBoard from "./TaskBoard/TaskBoard";
+
 
 function App() {
   return (
-    <div>
-      <Header />
-      <TaskBoard />
+    <div className="App">
+      
+    <TaskBoard />    
+  
     </div>
   );
 }

@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(207, 194, 255);
+    
+}
+.container-left{
+    flex: 1;
+    background-color: rgb(101, 117, 117);
+    color: white;
+    text-align: center;
+    letter-spacing: 1.2px;
+    padding: 18px 5px;
+}
+.container-right{
+    flex: 4;
+    padding: 1.2rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.main-section{
+    height: auto;
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.filter-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: auto;
+    height: 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 6px;
+    margin-left: 6px;
+}
+select{
+    height: 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 6px;
+    color: rgb(100, 100, 100);
+    width: 6rem;
+
+}
+
+.sort-row{
+    margin-top: 15px;
+}
+
+.new-task{
+    background-color: rgb(0, 80, 145);
+    color: white;
+    padding: 5px 25px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.list-container{
+    margin-top: 12px;
+    width: 19%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.list-container h3{
+    background-color: gray;
+    color: white;
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.task-box{
+    margin: 6px;
+    padding: 4px;
+    background-color: rgb(236, 236, 238);
+    border-radius: 4px;
+
+}
+.task-menu{
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.task-box button{
+    margin-top: 6px;
+    background-color: rgb(0, 80, 145);
+    color: white;
+    border: none;
+    padding: 3px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.create-modal{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.new-form{
+    width: 100%;
+    margin: 0px;
+
+    background-color: rgb(207, 194, 255);
+}
